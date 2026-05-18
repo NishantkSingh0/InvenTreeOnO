@@ -1,0 +1,14 @@
+Frontend: 
+    source ~/.zshrc
+    npm run dev
+
+Backend:
+source venv/bin/activate
+cd ./InvenTree
+export $(grep -v '^#' .env | xargs)
+python3 manage.py runserver
+
+
+SuperUser: nishantsingh | asdfghjkl
+normal user: test | test@123
+AdminPortal: admin | admin@123
